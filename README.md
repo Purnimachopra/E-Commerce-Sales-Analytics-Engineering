@@ -54,4 +54,4 @@ erDiagram
 
     ## Dashboard Preview
 
-    <img width="1359" height="749" alt="Screenshot 2026-02-18 134311" src="https://github.com/user-attachments/assets/1c929c81-58c7-4bd6-bb7b-7d9314977f54" />
+    <img  src="Powerbi-Screenshot.png" />
