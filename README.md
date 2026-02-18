@@ -14,7 +14,7 @@ graph LR
     style B fill:#f96,stroke:#333
     style C fill:#69f,stroke:#333
     style D fill:#6f6,stroke:#333
-
+```
 
 💡 The "Why" Section (Architectural Decisions)
 Why Medallion Architecture? I chose this to ensure clear data lineage and isolation. The Bronze layer preserves the raw "source of truth," while Silver handles deduplication and hashing, providing a reliable foundation for the Gold business-ready layer.
