@@ -46,3 +46,7 @@ erDiagram
         string category
         float price
     }
+
+    ## Dashboard Preview
+
+    ![Dashboard Screenshot](C:\Users\Purnima\OneDrive\Pictures\Screenshots 1\Screenshot 2026-02-18 134311.png)
