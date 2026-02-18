@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: dim_products
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_users
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_sales
+    columns:
+      - name: sale_key
+        tests:
+          - unique
+          - not_null
+      # Adding the User Relationship Test
+      - name: user_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_users')
+              field: user_id
+      - name: product_id
+        tests:
+          - not_null
+      - name: total_revenue
+        tests:
+          - not_null

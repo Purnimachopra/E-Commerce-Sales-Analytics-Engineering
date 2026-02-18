@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+ - name: raw
+   schema: public
+   tables:
+    - name: stg_products
+    - name: stg_users
+    - name: stg_carts

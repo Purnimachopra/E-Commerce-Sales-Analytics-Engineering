@@ -1,0 +1,114 @@
+[0m23:26:52.472698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8D7EA83B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8DB489BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8DB48B6E0>]}
+
+
+============================== 23:26:52.496989 | 4d6c2d66-098c-47bf-ae2b-cadc3d46cd97 ==============================
+[0m23:26:52.496989 [info ] [MainThread]: Running with dbt=1.11.5
+[0m23:26:52.499000 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Purnima\\.dbt', 'invocation_command': 'dbt init fakestore_transform', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:26:52.532387 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Purnima\.dbt
+[0m23:26:52.535953 [debug] [MainThread]: Starter project path: C:\Purnima\data engineering\venv\Lib\site-packages\dbt\include\starter_project
+[0m23:26:52.569299 [info ] [MainThread]: 
+Your new dbt project "fakestore_transform" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:26:52.569299 [info ] [MainThread]: Setting up your profile.
+[0m23:29:21.047831 [info ] [MainThread]: Profile fakestore_transform written to C:\Users\Purnima\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m23:29:21.047831 [debug] [MainThread]: Command `dbt init` succeeded at 23:29:21.047831 after 148.80 seconds
+[0m23:29:21.047831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8DB2F8B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8DADB5CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8DB803C80>]}
+[0m23:29:21.050796 [debug] [MainThread]: Flushing usage events
+[0m23:29:22.919107 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:30:18.726920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028921CEE360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028920CB0E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002892136D640>]}
+
+
+============================== 23:30:18.732461 | d6728696-5db0-49c5-8b02-c509be934813 ==============================
+[0m23:30:18.732461 [info ] [MainThread]: Running with dbt=1.11.5
+[0m23:30:18.732461 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Purnima\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:30:18.753217 [info ] [MainThread]: dbt version: 1.11.5
+[0m23:30:18.755224 [info ] [MainThread]: python version: 3.12.4
+[0m23:30:18.755224 [info ] [MainThread]: python path: C:\Purnima\data engineering\venv\Scripts\python.exe
+[0m23:30:18.755224 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:30:18.817695 [info ] [MainThread]: Using profiles dir at C:\Users\Purnima\.dbt
+[0m23:30:18.818790 [info ] [MainThread]: Using profiles.yml file at C:\Users\Purnima\.dbt\profiles.yml
+[0m23:30:18.818790 [info ] [MainThread]: Using dbt_project.yml file at C:\Purnima\data engineering\dbt_project.yml
+[0m23:30:18.820322 [info ] [MainThread]: adapter type: postgres
+[0m23:30:18.820322 [info ] [MainThread]: adapter version: 1.10.0
+[0m23:30:18.820322 [info ] [MainThread]: Configuration:
+[0m23:30:18.822630 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:30:18.822630 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:30:18.823846 [info ] [MainThread]: Required dependencies:
+[0m23:30:18.823846 [debug] [MainThread]: Executing "git --help"
+[0m23:30:18.908523 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:30:18.910131 [debug] [MainThread]: STDERR: "b''"
+[0m23:30:18.910131 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:30:18.910131 [info ] [MainThread]: Connection:
+[0m23:30:18.910131 [info ] [MainThread]:   host: localhost
+[0m23:30:18.910131 [info ] [MainThread]:   port: 5432
+[0m23:30:18.910131 [info ] [MainThread]:   user: postgres
+[0m23:30:18.913884 [info ] [MainThread]:   database: fakestore_dw
+[0m23:30:18.913884 [info ] [MainThread]:   schema: silver
+[0m23:30:18.915067 [info ] [MainThread]:   connect_timeout: 10
+[0m23:30:18.915067 [info ] [MainThread]:   role: None
+[0m23:30:18.915067 [info ] [MainThread]:   search_path: None
+[0m23:30:18.917151 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:30:18.917151 [info ] [MainThread]:   sslmode: None
+[0m23:30:18.917151 [info ] [MainThread]:   sslcert: None
+[0m23:30:18.919257 [info ] [MainThread]:   sslkey: None
+[0m23:30:18.919257 [info ] [MainThread]:   sslrootcert: None
+[0m23:30:18.919257 [info ] [MainThread]:   application_name: dbt
+[0m23:30:18.919257 [info ] [MainThread]:   retries: 1
+[0m23:30:18.919257 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m23:30:19.329539 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:30:19.416489 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:30:19.416489 [debug] [MainThread]: On debug: select 1 as id
+[0m23:30:19.416489 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:30:19.489832 [debug] [MainThread]: SQL status: SELECT 1 in 0.070 seconds
+[0m23:30:19.491572 [debug] [MainThread]: On debug: Close
+[0m23:30:19.491572 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:30:19.493580 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:30:19.493580 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Purnima\data engineering\dbt_project.yml> not found
+
+[0m23:30:19.495889 [debug] [MainThread]: Command `dbt debug` failed at 23:30:19.495889 after 0.91 seconds
+[0m23:30:19.495889 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:30:19.497631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028921B07620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028920D0E870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002892134D130>]}
+[0m23:30:19.497631 [debug] [MainThread]: Flushing usage events
+[0m23:30:21.184817 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:33:59.142556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001695358C260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016956169070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016956146750>]}
+
+
+============================== 23:33:59.144897 | 48dca70a-6a2c-4ac5-acf4-045f4109270f ==============================
+[0m23:33:59.144897 [info ] [MainThread]: Running with dbt=1.11.5
+[0m23:33:59.144897 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Purnima\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init fakestore_transform', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:33:59.168749 [info ] [MainThread]: A project called fakestore_transform already exists here.
+[0m23:33:59.168749 [debug] [MainThread]: Command `dbt init` succeeded at 23:33:59.168749 after 0.18 seconds
+[0m23:33:59.168749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016956D95F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016956D95490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016956D95EB0>]}
+[0m23:33:59.171446 [debug] [MainThread]: Flushing usage events
+[0m23:34:00.840203 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:50:55.065209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1BA49AD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1BA4C5A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1B96A84D0>]}
+
+
+============================== 10:50:55.082746 | 8a867607-3699-417f-8be3-2db41716b8a5 ==============================
+[0m10:50:55.082746 [info ] [MainThread]: Running with dbt=1.11.5
+[0m10:50:55.082746 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Purnima\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m10:50:55.086452 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Purnima\data engineering\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:50:55.086452 [debug] [MainThread]: Command `dbt run` failed at 10:50:55.086452 after 0.32 seconds
+[0m10:50:55.086452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1B9D42450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1BA4C5A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1BA686DB0>]}
+[0m10:50:55.091349 [debug] [MainThread]: Flushing usage events
+[0m10:50:57.461593 [debug] [MainThread]: An error was encountered while trying to flush usage events
