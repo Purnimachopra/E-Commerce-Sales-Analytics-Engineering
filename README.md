@@ -1,19 +1,24 @@
 🏗️ Architecture Diagram
 ```mermaid
 graph LR
-    subgraph Ingestion
-    A[External API] -->|Python Script| B[(Bronze: Raw JSON)]
+    subgraph Source
+    A[External API]
     end
-    subgraph Transformation
-    B -->|dbt + SQL| C[(Silver: Cleaned/Hashed)]
-    C -->|dbt + CTEs| D[(Gold: Star Schema)]
+
+    subgraph "Data Lake (Medallion)"
+    A -->|Python Ingestion| B[(Bronze: Raw JSON)]
+    B -->|dbt Transformation| C[(Silver: Cleaned & Hashed)]
     end
-    subgraph Serving
-    D --> E[Power BI / Analytics]
+
+    subgraph "Quality & Governance"
+    C -.-> D{dbt Tests}
+    C -.-> E{Audit Logs}
     end
+
     style B fill:#f96,stroke:#333
     style C fill:#69f,stroke:#333
-    style D fill:#6f6,stroke:#333
+    style D fill:#eee,stroke:#333
+    style E fill:#eee,stroke:#333
 ```
 
 💡 The "Why" Section (Architectural Decisions)
