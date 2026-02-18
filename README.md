@@ -1,24 +1,7 @@
 🏗️ Architecture Diagram
 ```mermaid
 graph LR
-    subgraph Source
-    A[External API]
-    end
-
-    subgraph "Data Lake (Medallion)"
-    A -->|Python Ingestion| B[(Bronze: Raw JSON)]
-    B -->|dbt Transformation| C[(Silver: Cleaned & Hashed)]
-    end
-
-    subgraph "Quality & Governance"
-    C -.-> D{dbt Tests}
-    C -.-> E{Audit Logs}
-    end
-
-    style B fill:#f96,stroke:#333
-    style C fill:#69f,stroke:#333
-    style D fill:#eee,stroke:#333
-    style E fill:#eee,stroke:#333
+    
 ```
 
 💡 The "Why" Section (Architectural Decisions)
@@ -34,7 +17,22 @@ erDiagram
     FACT_SALES ||--o{ DIM_CUSTOMERS : "links_to"
     FACT_SALES ||--o{ DIM_DATE : "links_to"
     
-    FACT_SALES {
+    FACT_SALES {subgraph Source
+    A[External API]
+    end
+
+    subgraph "Data Lakehouse"
+    A -->|Python Ingestion| B[(Bronze: Raw JSON)]
+    B -->|dbt Transformation| C[(Silver: Cleaned & Hashed)]
+    end
+
+    subgraph "Analytics"
+    C --> D[Power BI Dashboard]
+    end
+
+    style B fill:#f96,stroke:#333
+    style C fill:#69f,stroke:#333,stroke-width:4px
+    style D fill:#f2d72e,stroke:#333
         string transaction_id PK
         string product_id FK
         string customer_id FK
